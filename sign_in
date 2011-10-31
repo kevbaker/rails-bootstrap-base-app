@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Rails Bootstrap</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="/stylesheets/docs.css" rel="stylesheet">
+
+
+    <!-- Le javascript -->
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/jquery.tablesorter.min.js"></script>
+    <script src="/javascripts/bootstrap-dropdown.js"></script>
+    <script src="/javascripts/jquery.tablesorter.min.js"></script>
+    <script src="/javascripts/application.js"></script>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/ico/bootstrap-apple-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/ico/bootstrap-apple-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/ico/bootstrap-apple-114x114.png">
+
+
+    <body>
+
+    <!-- Topbar ================================================== -->
+    <div class="topbar" data-dropdown="dropdown">
+      <div class="topbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Rails Bootstrap</a>
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/secure/index">Secure Page</a></li>
+            <li><a href="/feedbacks">Feedback</a></li>
+            <li><a href="http://twitter.github.com/bootstrap">Bootstrap Docs</a></li>
+            <li><a href="http://twitter.github.com/bootstrap/javascript.html">Bootstrap Js</a></li>
+          </ul>
+          <ul class="nav secondary-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Sign in</a>
+              <ul class="dropdown-menu">
+	          		<li><a href="/users/sign_up">Sign up</a></li>
+                <li class="divider"></li>
+		          	<li><a href="/users/sign_in">Sign in</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Masthead (blueprinty thing)
+    ================================================== -->
+    <header class="jumbotron masthead" id="overview">
+      <div class="inner">
+        <div class="container">
+          <h1>Rails Bootstrap...</h1>
+          <p class="lead">
+            Rails Bootstrap, base application with devise authentication <br/>
+            and Twitter Bootstrap integrated.
+          </p>
+          <p><strong>Nerd alert:</strong> Bootstrap is <a href="#less" title="Read about using Bootstrap with Less">built with Less</a> and was designed to work out of the gate with modern browsers in mind.</p>
+        </div><!-- /container -->
+      </div>
+    </header>
+
+	<div class="container">
+	<div class="row">
+		<h2>Sign in</h2>
+		
+		<form accept-charset="UTF-8" action="/users/sign_in" class="user_new" id="user_new" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="a9jFZaHiapClROdMZVgxYP/8djq0aCFTgU6caq1pTCQ=" /></div>
+
+		<fieldset>
+		  <div class="clearfix">
+			  <label for="user_email">Email</label>
+			  <div class="input">
+			  	<input id="user_email" name="user[email]" size="30" type="email" value="" />
+			  </div>
+		  </div>
+
+		  <div class="clearfix">
+			  <label for="user_password">Password</label>
+			  <div class="input">
+				  <input id="user_password" name="user[password]" size="30" type="password" />
+			  </div>
+		  </div>
+		  
+		  <div class="clearfix">
+			  <div class="input">
+			  	<input class="btn large primary" name="commit" type="submit" value="Sign in" />
+			  </div>
+		  </div>
+
+		  	<div class="clearfix">
+				<label>&nbsp;</label>
+			    <div class="input">
+			    	<input name="user[remember_me]" type="hidden" value="0" /><input id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" />
+			    	<span>Remember me</span> | 
+			    	<span><a href="/users/password/new">Forgot your password?</a></span>
+			    </div>
+		    </div>
+
+		</fieldset>
+</form>
+		</div>
+	</div>
+</div>
+
+
+
+    </section></div><!-- /container -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>
+          Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.<br>
+          Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+        </p>
+      </div>
+    </footer>
+
+  
+</body></html>
+

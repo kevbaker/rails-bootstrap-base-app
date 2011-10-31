@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+
+  <h1>Listing feedbacks</h1>
+
+
+  <table class="zebra-striped" id="feedbacktable">
+    <tr>
+      <th>Title</th>
+      <th>Email</th>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  <% @feedbacks.each do |feedback| %>
+    <tr title="<%= feedback.body %>">
+      <td><%= feedback.title %></td>
+      <td><%= feedback.email %></td>
+      <td><%= feedback.name %></td>
+      <td><%= link_to 'Show', feedback %></td>
+      <td><%= link_to 'Edit', edit_feedback_path(feedback) %></td>
+      <td><%= link_to 'Destroy', feedback, confirm: 'Are you sure?', method: :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+
+
+  <%= link_to 'New Feedback', new_feedback_path, :class => "btn large primary" %>
+  </div>
+</div>
+

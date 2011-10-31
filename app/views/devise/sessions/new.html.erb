@@ -1,0 +1,44 @@
+<div class="container">
+	<div class="row">
+		<h2>Sign in</h2>
+		
+		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+		<fieldset>
+		  <div class="clearfix">
+			  <%= f.label :email %>
+			  <div class="input">
+			  	<%= f.email_field :email %>
+			  </div>
+		  </div>
+
+		  <div class="clearfix">
+			  <%= f.label :password %>
+			  <div class="input">
+				  <%= f.password_field :password %>
+			  </div>
+		  </div>
+		  
+		  <div class="clearfix">
+			  <div class="input">
+			  	<%= f.submit "Sign in", :class => "btn large primary" %>
+			  </div>
+		  </div>
+
+		  <% if devise_mapping.rememberable? -%>
+		  	<div class="clearfix">
+				<label>&nbsp;</label>
+			    <div class="input">
+			    	<%= f.check_box :remember_me %>
+			    	<span>Remember me</span> | 
+			    	<span><a href="/users/password/new">Forgot your password?</a></span>
+			    </div>
+		    </div>
+		  <% end -%>
+
+		</fieldset>
+		<% end %>
+
+		</div>
+	</div>
+</div>

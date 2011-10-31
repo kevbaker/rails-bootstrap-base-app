@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+
+  <%= form_for(@feedback) do |f| %>
+    <% if @feedback.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@feedback.errors.count, "error") %> prohibited this feedback from being saved:</h2>
+
+        <ul>
+        <% @feedback.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="clearfix">
+      <%= f.label :title %>
+      <div class="input">
+        <%= f.text_field :title, :class => "xlarge" %>
+      </div>
+    </div>
+    <div class="clearfix">
+      <%= f.label :body %>
+      <div class="input">
+        <%= f.text_area :body, :rows => "5", :class => "xxlarge" %>
+      </div>
+    </div>
+    <div class="clearfix">
+      <%= f.label :name %>
+      <div class="input">
+        <%= f.text_field :name, :class => "xlarge"  %>
+      </div>
+    </div>
+    <div class="clearfix">
+      <%= f.label :email %>
+      <div class="input">
+        <%= f.text_field :email, :class => "xlarge"  %>
+      </div>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Send feedback', :class => "btn large primary" %> 
+    </div>
+  <% end %>
+
+</div>
+</div>

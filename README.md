@@ -1,0 +1,2 @@
+## Rails Bootstrap Base Application
+ 

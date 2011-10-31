@@ -1,0 +1,52 @@
+<div class="container">
+	<div class="row">
+	
+	<h2>Edit <%= resource_name.to_s.humanize %></h2>
+		
+	<%= devise_error_messages! %>
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+
+		<fieldset>
+
+			<div class="clearfix">
+				<%= f.label :email %>
+				<div class="input">
+					<%= f.email_field :email %>
+				</div>
+			</div>
+
+			<div class="clearfix">			
+				<%= f.label :new_password, :for => "user_password" %>
+				<div class="input">
+					<%= f.password_field :password %>
+				</div>
+			</div>
+
+			<div class="clearfix">
+				<%= f.label :confirm, :for => "user_password_confirmation" %>
+				<div class="input">
+					<%= f.password_field :password_confirmation %>
+				</div>
+			</div>
+
+			<div class="clearfix">
+				<%= f.label :current_password %> 
+				<div class="input">
+					<%= f.password_field :current_password %>
+			  </div>
+			</div>
+
+			<div class="clearfix">
+				<div class="input">
+					<%= f.submit "Update", :class => "btn large primary"  %>&nbsp;&nbsp;
+					<%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>
+
+				</div>
+			</div>
+
+		</fieldset>
+
+	<% end %>
+
+	</div>
+</div>

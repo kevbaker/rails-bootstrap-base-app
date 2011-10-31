@@ -1,0 +1,2 @@
+module SecureHelper
+end

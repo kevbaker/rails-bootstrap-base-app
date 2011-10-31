@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <b>Title:</b>
+    <%= @feedback.title %>
+  </p>
+
+  <p>
+    <b>Body:</b>
+    <%= @feedback.body %>
+  </p>
+
+  <p>
+    <b>Email:</b>
+    <%= @feedback.email %>
+  </p>
+
+  <p>
+    <b>Name:</b>
+    <%= @feedback.name %>
+  </p>
+
+
+  <%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+  <%= link_to 'Back', feedbacks_path %>
+  </div>
+</div>
