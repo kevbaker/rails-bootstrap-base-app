@@ -1,2 +1,18 @@
-## Rails Bootstrap Base Application
+# Rails Bootstrap Base Application
  
+## Overview
+
+Rails Bootstrap Base App was made as a quick way to DRY up the development process for projects needing some basic web application functionality. It includes a basic design, authentication, authorization and some seed data. It also started as an attempt to integrate Twitter's Bootstrap HTML5 kit with Rails. The goal would be to eventually extract the entire project as a gem.
+
+## Features
+
+* Layout - Twitter's Bootstrap, [twitter/bootstrap](https://github.com/twitter/bootstrap)
+* Authentication - Devise, [platformatec/devise](https://github.com/plataformatec/devise)
+* Authentication Token - uses the Devise auth token feature, for API access
+* Authorization - Canan, [ryanb/cancan](https://github.com/ryanb/cancan)
+* Feedback - Simple feedback application to test API and secure pages
+* Seed data - Seed data to kick start users for authentication and authorization.
+
+## Todo
+
+See issues - [rails-bootstrap-base-app/issues](https://github.com/kevbaker/rails-bootstrap-base-app/issues)
