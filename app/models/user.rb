@@ -14,9 +14,15 @@ class User < ActiveRecord::Base
   # Ensure the there is a auth token for all users, authorization will still be enforced
   before_save :ensure_authentication_token
 
+  # Define user role methods
   def role?(role)
-    roles.include? role.to_s
+    role_names.include? role.to_s
   end
+
+  def role_names
+    roles.map(&:name)
+  end
+
   def ensure_authentication_token!   
     reset_authentication_token! if authentication_token.blank?   
   end  
