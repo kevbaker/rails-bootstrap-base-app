@@ -25,9 +25,15 @@ class Ability
     #
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities
 
+    #
+    # Guest user 
+    user ||= User.new 
+
     # Admin Role
     if user.role? :admin
-      can :create, :all
+      can :manage, Feedback 
+    else
+      can :create, Feedback
     end
 
   end
