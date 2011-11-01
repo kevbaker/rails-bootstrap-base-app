@@ -12,6 +12,17 @@ Rails Bootstrap Base App was made as a quick way to DRY up the development proce
 * Authorization - Canan, [ryanb/cancan](https://github.com/ryanb/cancan)
 * Feedback - Simple feedback application to test API and secure pages
 * Seed data - Seed data to kick start users for authentication and authorization.
+            
+
+## Installation
+
+* Clone the git repository
+* Create your database
+* Update the database.yml with correct credentials
+* rake db:migrate
+* rake db:seed
+* rails s
+
 
 ## Todo
 
