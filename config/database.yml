@@ -9,7 +9,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: database_name_development 
+  database: parkables.com.development
   pool: 5
   username: root
   password:
@@ -24,7 +24,7 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: database_name_test 
+  database: parkables.com.test
   pool: 5
   username: root
   password:
@@ -34,7 +34,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: database_name_production
+  database: parkables.com.production
   pool: 5
   username: root
   password:
