@@ -22,7 +22,9 @@ Rails Bootstrap Base App was made as a quick way to DRY up the development proce
 * rake db:migrate
 * rake db:seed
 * rails s
-
+* open in browser
+* click on secure
+* login using "admin@domain.com:secret", "user@domain.com:secret" or register
 
 ## Todo
 

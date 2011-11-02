@@ -9,11 +9,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: parkables.com.development
+  database: boostrap_development
   pool: 5
   username: root
   password:
-  #socket: /tmp/mysql.sock
   host: 127.0.0.1
 
 
@@ -24,18 +23,18 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: parkables.com.test
+  database: bootstrap_test
   pool: 5
   username: root
   password:
-  socket: /tmp/mysql.sock
+  host: 127.0.0.1
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: parkables.com.production
+  database: bootstrap_production
   pool: 5
   username: root
   password:
-  socket: /tmp/mysql.sock
+  host: 127.0.0.1
