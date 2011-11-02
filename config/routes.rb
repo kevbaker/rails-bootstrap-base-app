@@ -1,5 +1,7 @@
 Bootstrap::Application.routes.draw do
 
+  get "users/show"
+
   resources :feedbacks
 
   #devise_for :admin_users, ActiveAdmin::Devise.config
@@ -9,6 +11,8 @@ Bootstrap::Application.routes.draw do
   get "home/index"
 
   devise_for :users
+
+  resources :users, :only => [:show]
 
   # get "home/index"
 
