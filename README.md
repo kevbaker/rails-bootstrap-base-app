@@ -28,11 +28,14 @@ Rails Bootstrap Base App was made as a quick way to DRY up the development proce
 * click on secure
 * login using "admin@domain.com:secret", "user@domain.com:secret" or register
 * Get auth token from API 
-```bash
+
+```
 curl -X GET "http://localhost:3000/users/1.json" -u "admin@domain.com:secret"
 ```
+
 * Then use auth token to make secure request rather than using username and password each time. Auth token will remain static unless changed in the user model.
-```bash
+
+```
 curl -X GET "http://localhost:3000/feedbacks/1.json?auth_token=<authentication_token>"
 ```
 
