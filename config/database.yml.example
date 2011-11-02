@@ -9,11 +9,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: bootstrap_development
+  database: boostrap_development
   pool: 5
   username: root
   password:
-  #socket: /tmp/mysql.sock
   host: 127.0.0.1
 
 
