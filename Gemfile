@@ -7,6 +7,7 @@ gem 'rails','=3.1.1'
 
 #gem 'mysql2'
 gem 'mysql2',">0.3"
+gem 'pg'
 
 
 
