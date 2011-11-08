@@ -6,8 +6,14 @@ gem 'rails','=3.1.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'mysql2'
-gem 'mysql2',">0.3"
-gem 'pg'
+group :production do
+  gem 'mysql2',">0.3"
+end
+
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
+end
 
 
 
