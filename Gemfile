@@ -4,17 +4,17 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'rails','=3.1.1'
-gem 'rails','>=3.0.0'
+gem 'rails','=3.1.1'
+#gem 'rails','>=3.0.0'
 
 #gem 'mysql2'
-group :production do
+group :development do
   gem 'mysql2',">0.3"
 end
 
 group :production do
-  gem 'pg'
-  gem 'therubyracer-heroku', '0.8.1.pre3'
+#  gem 'pg'
+#  gem 'therubyracer-heroku', '0.8.1.pre3'
 end
 
 

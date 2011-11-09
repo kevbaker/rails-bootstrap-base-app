@@ -12,7 +12,8 @@ Bootstrap::Application.routes.draw do
 
   devise_for :users
 
-  resources :users, :only => [:show]
+  #resources :users, :only => [:show]
+  resources :users
 
   # get "home/index"
 
