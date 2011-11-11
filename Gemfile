@@ -13,8 +13,8 @@ group :development do
 end
 
 group :production do
-#  gem 'pg'
-#  gem 'therubyracer-heroku', '0.8.1.pre3'
+  gem 'pg'
+  gem 'therubyracer-heroku', '0.8.1.pre3'
 end
 
 
@@ -41,11 +41,11 @@ end
 # group :development, :test do
 #   gem 'webrat'
 # end
-gem "capybara", :group => [:development, :test]
 gem "devise"
-gem "jquery-rails"
-gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
-gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "cancan"
+gem "jquery-rails"
+#gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+#gem "capybara", :group => [:development, :test]
+#gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 
