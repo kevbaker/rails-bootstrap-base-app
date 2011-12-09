@@ -1,23 +1,38 @@
-<h1>Listing users</h1>
+<div class="container">
+	<div class="row">
 
-<table>
-  <tr>
-    <th>Email</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <div class="span16">
+      &nbsp;
+    </div>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.email %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+    <div class="span14">
+      &nbsp;
+    </div>
+    <div class="span2">
+        <%= link_to 'New User', new_user_path, :class => ["btn","primary"] %>
+    </div>
 
-<br />
+    <div class="span16">
+      &nbsp;
+    </div>
 
-<%= link_to 'New User', new_user_path %>
+    <table id="user-table" class="zebra-striped">
+      <tr>
+        <th>Email</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </table>
+  </div>
+</div>
+

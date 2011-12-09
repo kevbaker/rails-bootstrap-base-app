@@ -15,6 +15,8 @@ Bootstrap::Application.routes.draw do
   #resources :users, :only => [:show]
   resources :users
 
+  get 'users/:id/edit2' => 'users#edit'
+
   # get "home/index"
 
   # The priority is based upon order of creation:

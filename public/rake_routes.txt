@@ -1,3 +1,4 @@
+              users_show GET    /users/show(.:format)          {:controller=>"users", :action=>"show"}
                feedbacks GET    /feedbacks(.:format)           {:action=>"index", :controller=>"feedbacks"}
                          POST   /feedbacks(.:format)           {:action=>"create", :controller=>"feedbacks"}
             new_feedback GET    /feedbacks/new(.:format)       {:action=>"new", :controller=>"feedbacks"}
@@ -20,5 +21,13 @@ cancel_user_registration GET    /users/cancel(.:format)        {:action=>"cancel
   edit_user_registration GET    /users/edit(.:format)          {:action=>"edit", :controller=>"devise/registrations"}
                          PUT    /users(.:format)               {:action=>"update", :controller=>"devise/registrations"}
                          DELETE /users(.:format)               {:action=>"destroy", :controller=>"devise/registrations"}
+                   users GET    /users(.:format)               {:action=>"index", :controller=>"users"}
+                         POST   /users(.:format)               {:action=>"create", :controller=>"users"}
+                new_user GET    /users/new(.:format)           {:action=>"new", :controller=>"users"}
+               edit_user GET    /users/:id/edit(.:format)      {:action=>"edit", :controller=>"users"}
+                    user GET    /users/:id(.:format)           {:action=>"show", :controller=>"users"}
+                         PUT    /users/:id(.:format)           {:action=>"update", :controller=>"users"}
+                         DELETE /users/:id(.:format)           {:action=>"destroy", :controller=>"users"}
+                         GET    /users/:id/edit2(.:format)     {:controller=>"users", :action=>"edit"}
                     root        /                              {:controller=>"home", :action=>"index"}
                                 /home/index(.:format)          {:controller=>"home", :action=>"index"}
