@@ -26,6 +26,15 @@ class UsersController < ApplicationController
   end
 
 
+  def new    
+    @user = User.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @user}
+    end
+ 
+  end
 
 
   # PUT /users/1
@@ -35,7 +44,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.update_attributes(params[:user])
-        format.html { redirect_to(@user, :notice => 'User was successfully updated.') }
+        format.html { redirect_to(users_path, :notice => 'User was successfully updated.') }
         format.json  { head :ok }
       else
         format.html { render :action => "edit" }
